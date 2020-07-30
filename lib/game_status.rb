@@ -31,10 +31,9 @@ WIN_COMBINATIONS = [
    end
   end
   
-  def full?(board)
-    board.all? {|spot| spot == "X" || spot == "O"}
-   
-  end
+def full?(board)
+  board.all? {|spot| spot == "X" || spot == "O"}
+end
 
 def draw?(board)
    !won?(board) && full?(board)
